@@ -1,5 +1,5 @@
 /*피보나치수열*/
-public class JJEx4_11 {
+public class JJEx04_11 {
     public static void main(String[] args){
         int num1 = 1;
         int num2 = 1;
