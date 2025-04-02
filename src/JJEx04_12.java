@@ -1,11 +1,12 @@
 public class JJEx04_12 {
     /*구구단 출력*/
     public static void main(String[] args) {
-        for (int k = 0; k < 3; k++) {
+        /*
+        for (int k = 0; k < 3; k++) { //k+=3으로하고
             for (int i = 1; i <= 3; i++) {
                 for (int j = 2; j <= 4; j++) {
                     System.out.print(j + (k * 3) + "*" + i + "=" + (j + (k * 3))*i);
-                    if (j == 4) {
+                    if (j == 4) { //식 출력하기 전에 if(i+k < 10) 붙이면 되는 걸 어렵게 돌아갔다..
                         System.out.println();
                     } else if (j == 3 && (j + (k * 3) == 9)) {
                         System.out.println();
@@ -16,6 +17,19 @@ public class JJEx04_12 {
             if (k < 2) {
                 System.out.println();
             }
+        }
+         */
+        for(int k=0;k<3;k++){
+            for(int i=1;i<=3;i++){
+                for(int j=2;j<=4;j++){
+                    if((j+(k*3))<10) {
+                        System.out.print(j + (k * 3) + "*" + i + "=" + (j + (k * 3)) * i);
+                        System.out.print("\t");
+                    }
+                }
+                System.out.println();
+            }
+            System.out.println();
         }
     }
 }
